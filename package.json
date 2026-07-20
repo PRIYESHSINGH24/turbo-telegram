@@ -1,0 +1,16 @@
+{
+  "name": "px_lifecycle",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.33.0",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^9.0.7"
+  }
+}
