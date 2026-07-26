@@ -14,9 +14,15 @@ importers:
 
   apps/customer-portal:
     dependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/ eslint-config
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@repo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       react:
         specifier: ^19.2.7
         version: 19.2.7
@@ -46,6 +52,8 @@ importers:
         specifier: ^8.1.1
         version: 8.1.5(@types/node@24.13.3)(yaml@2.9.0)
 
+  packages/ eslint-config: {}
+
   packages/typescript-config: {}
 
   packages/ui:
@@ -66,6 +74,8 @@ importers:
       typescript:
         specifier: ^5.9.0
         version: 5.9.3
+
+  packages/utils: {}
 
 packages:
 
