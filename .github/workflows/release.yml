@@ -19,7 +19,7 @@ concurrency:
 jobs:
   quality-gates:
     name: Quality Gates
-    uses: ./.github/workflows/quality-gates.yml
+    uses: ./.github/workflows/quality-gate.yml
     secrets: inherit
 
   release:
